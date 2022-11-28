@@ -48,30 +48,32 @@
 </head>
 <body>
 <main class="container">
-<!--    <div class="loader">-->
-<!--        <div class="dot"></div>-->
-<!--        <div class="dot"></div>-->
-<!--        <div class="dot"></div>-->
-<!--    </div>-->
+    <!--    <div class="loader">-->
+    <!--        <div class="dot"></div>-->
+    <!--        <div class="dot"></div>-->
+    <!--        <div class="dot"></div>-->
+    <!--    </div>-->
 
     <h1>La météo de <span>Totoro</span></h1>
 
-    <img
-            class="weather-information"
-            src="assets/icons/day/04d.svg"
-            alt="icône en forme de nuages">
-    <div class="bloc-info">
-        <p class="temperature"></p>
-        <p class="position">Paris, FR </p>
-    </div>
+    <section class="weather-information">
+        <img
+                class="weather-logo"
+                src="assets/icons/day/04d.svg"
+                alt="icône en forme de nuages">
+        <div class="bloc-info">
+            <p class="temperature"></p>
+            <p class="position">Paris, FR </p>
+        </div>
+    </section>
 
-    <div class="bottom-content">
+    <section class="bottom-content">
         <div class="tabs">
             <button class="active">Heures</button>
             <button>Prévision</button>
         </div>
         <div class="forecast-content">
-            <div class="forecast forecast-hour active">
+            <section class="forecast forecast-hour active">
                 <div class="forecast-block">
                     <p class="hour-name">18h</p>
                     <p class="hour-temp">25</p>
@@ -100,8 +102,8 @@
                     <p class="hour-name">18h</p>
                     <p class="hour-temp">25</p>
                 </div>
-            </div>
-            <div class="forecast day-forecast">
+            </section>
+            <section class="forecast day-forecast">
                 <div class="forecast-block">
                     <p class="day-name">Mar</p>
                     <p class="day-temp">25</p>
@@ -130,9 +132,9 @@
                     <p class="day-name">Mar</p>
                     <p class="day-temp">25</p>
                 </div>
-            </div>
+            </section>
         </div>
-    </div>
+    </section>
 </main>
 <script src="js/app.js"></script>
 </body>
